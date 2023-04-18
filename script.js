@@ -6,3 +6,4 @@ var apiKey = "ae8dc33d91f6926ff7f6df500e291f80";
 var cityName = document.getElementById("cityName");
 var temp = document.getElementById("temp");
 var humidity = document.getElementById("humidity");
+var wind = document.getElementById("wind");
