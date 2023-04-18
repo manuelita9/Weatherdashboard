@@ -12,6 +12,8 @@ const apiKey = "ae8dc33d91f6926ff7f6df500e291f80";
 
 // Fetch weather data from OpenWeatherMap API
 async function getCity() {
+
+}
   const city = searchInput.value;
   const currentUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
   const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}`;
@@ -78,4 +80,4 @@ function displayForecastWeather(data) {
     windEl.textContent = `Wind: ${data.list[i].wind.speed} MPH`;
     humidityEl.textContent = `Humidity: ${data.list[i].main.humidity}%`;
 
-    $(`#forecast${i}`).append(dateEl);
+$(`#forecast${i}`).append(dateEl);
